@@ -1,0 +1,89 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+dance/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project specific
+uploads/
+results/*.json
+!results/.gitkeep
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.mkv
+*.flv
+*.webm
+
+# Docker
+dancemoves-docker-image.tar
+*.tar
+
+# AWS & Deployment
+.aws/
+deployment-config.json
+deployment-info.json
+temp-task-definition.json
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+.env.production
+
+# Security
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+
+# Temporary files
+tmp/
+temp/
+.tmp/
