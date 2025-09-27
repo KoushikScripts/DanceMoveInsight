@@ -1,0 +1,2119 @@
+{
+  "video_info": {
+    "duration_seconds": 11.8,
+    "total_frames": 354,
+    "frames_with_poses": 309
+  },
+  "pose_summary": {
+    "arms_crossed": {
+      "count": 262,
+      "percentage": 84.79
+    },
+    "squat": {
+      "count": 159,
+      "percentage": 51.46
+    },
+    "standing": {
+      "count": 73,
+      "percentage": 23.62
+    },
+    "lunge": {
+      "count": 53,
+      "percentage": 17.15
+    }
+  },
+  "timeline": [
+    {
+      "timestamp": 0.73,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 0.8,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 0.83,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 0.87,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 0.9,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 0.93,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 0.97,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 1.0,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 1.03,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 1.07,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 1.1,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 1.13,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 1.17,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 1.2,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 1.23,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 1.27,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.3,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.33,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.43,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 1.47,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 1.5,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 1.53,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 1.57,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 1.6,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 1.63,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 1.67,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.7,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.73,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.77,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.8,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.83,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.87,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.9,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.93,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 1.97,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.0,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.03,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.07,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.1,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.13,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.17,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.2,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.23,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.27,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.3,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.33,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.37,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.4,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.43,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.47,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.5,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 2.53,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 2.57,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 2.6,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 2.63,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 2.67,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 2.7,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 2.73,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 2.77,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 2.8,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.83,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.87,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.9,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.93,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 2.97,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 3.0,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 3.03,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 3.07,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 3.1,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.13,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.17,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.2,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.23,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.27,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 3.3,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 3.33,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 3.37,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.4,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.43,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.47,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.5,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.53,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.57,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.6,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 3.63,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 3.67,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 3.7,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 3.73,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.77,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.8,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.83,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.87,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.9,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.93,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 3.97,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.0,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 4.03,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 4.07,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 4.1,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.13,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.17,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.2,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.23,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.27,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.3,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.33,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.37,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.4,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.43,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 4.47,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 4.5,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 4.53,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 4.57,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.6,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.63,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.67,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.7,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.73,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.77,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.8,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.83,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.87,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 4.9,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 4.93,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 4.97,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.0,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.03,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.07,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.1,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.13,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.17,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.2,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 5.23,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 5.27,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 5.3,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 5.33,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 5.37,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.4,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.43,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.47,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.5,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.53,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.57,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.6,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.63,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.67,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.7,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.73,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.77,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 5.8,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.83,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.87,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.9,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.93,
+      "poses": [
+        "arms_crossed",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 5.97,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 6.0,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 6.03,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 6.07,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 6.1,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 6.13,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 6.17,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 6.2,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 6.23,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 6.27,
+      "poses": [
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 6.33,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 6.37,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 6.4,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 6.43,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 6.47,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 6.5,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 6.53,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 6.57,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 6.6,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 6.63,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 6.67,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 6.7,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 6.73,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 6.77,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 6.8,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 6.83,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 6.87,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 6.9,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 6.93,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 6.97,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.0,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 7.03,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 7.07,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.1,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.13,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.17,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.2,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.23,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.27,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.3,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.33,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.37,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.4,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.43,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.47,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.5,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.53,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.57,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.6,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.63,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.67,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.7,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 7.73,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.77,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.8,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.83,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.87,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.9,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.93,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 7.97,
+      "poses": [
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 8.0,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.03,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.07,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.1,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.13,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.17,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.2,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.23,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.27,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.3,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.33,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.37,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.4,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.43,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.47,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.5,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.53,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 8.57,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 8.6,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.63,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.67,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.7,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.73,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.77,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.8,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.83,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 8.87,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 8.9,
+      "poses": [
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 8.93,
+      "poses": [
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 8.97,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.0,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.03,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.07,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.1,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.13,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.17,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.2,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.23,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.27,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.3,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.33,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.37,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.4,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.43,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.47,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.5,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.53,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.57,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.6,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.63,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.67,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.7,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.73,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 9.77,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.8,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.83,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.87,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.9,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 9.93,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 9.97,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 10.0,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 10.03,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 10.07,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 10.1,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 10.13,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 10.17,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 10.2,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 10.23,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 10.27,
+      "poses": [
+        "arms_crossed",
+        "squat",
+        "lunge"
+      ]
+    },
+    {
+      "timestamp": 10.3,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 10.33,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 10.37,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 10.43,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.47,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.5,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.53,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.57,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.6,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.63,
+      "poses": [
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.67,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.7,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.73,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.77,
+      "poses": [
+        "arms_crossed",
+        "standing"
+      ]
+    },
+    {
+      "timestamp": 10.8,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 10.83,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 10.87,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 10.9,
+      "poses": [
+        "arms_crossed"
+      ]
+    },
+    {
+      "timestamp": 10.93,
+      "poses": [
+        "arms_crossed",
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 10.97,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 11.0,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 11.03,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 11.07,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 11.1,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 11.13,
+      "poses": [
+        "squat"
+      ]
+    },
+    {
+      "timestamp": 11.17,
+      "poses": [
+        "squat"
+      ]
+    }
+  ]
+}

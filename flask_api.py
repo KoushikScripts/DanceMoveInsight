@@ -38,18 +38,25 @@ def allowed_file(filename):
 
 @app.route('/', methods=['GET'])
 def home():
-    """API documentation endpoint"""
-    return jsonify({
-        "message": "Dance Pose Detection API",
-        "version": "1.0.0",
-        "endpoints": {
-            "POST /upload": "Upload video for pose analysis",
-            "GET /result/<job_id>": "Get analysis results",
-            "GET /health": "Health check"
-        },
-        "supported_formats": list(ALLOWED_EXTENSIONS),
-        "max_file_size": "100MB"
-    })
+    """Serve the upload interface or API documentation"""
+    # Check if request wants JSON (API documentation)
+    if request.headers.get('Accept') == 'application/json':
+        return jsonify({
+            "message": "Dance Pose Detection API",
+            "version": "1.0.0",
+            "endpoints": {
+                "GET /": "Upload interface (HTML) or API docs (JSON)",
+                "POST /upload": "Upload video for pose analysis",
+                "GET /result/<job_id>": "Get analysis results",
+                "GET /results": "List all results",
+                "GET /health": "Health check"
+            },
+            "supported_formats": list(ALLOWED_EXTENSIONS),
+            "max_file_size": "100MB"
+        })
+    else:
+        # Serve HTML upload interface
+        return render_template('upload.html')
 
 @app.route('/health', methods=['GET'])
 def health_check():
