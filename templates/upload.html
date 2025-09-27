@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Pose Detection - Upload Video</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+        
+        .upload-area {
+            border: 3px dashed #667eea;
+            border-radius: 10px;
+            padding: 40px;
+            text-align: center;
+            margin: 20px 0;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .upload-area:hover {
+            border-color: #764ba2;
+            background-color: #f8f9ff;
+        }
+        
+        .upload-area.dragover {
+            border-color: #764ba2;
+            background-color: #f0f2ff;
+        }
+        
+        input[type="file"] {
+            display: none;
+        }
+        
+        .upload-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px;
+            transition: transform 0.2s ease;
+        }
+        
+        .upload-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .upload-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .progress {
+            width: 100%;
+            height: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+            display: none;
+        }
+        
+        .progress-bar {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            width: 0%;
+            transition: width 0.3s ease;
+        }
+        
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            display: none;
+        }
+        
+        .result.success {
+            background-color: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        
+        .result.error {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        
+        .pose-summary {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .pose-card {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+        
+        .pose-name {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        
+        .pose-stats {
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .video-info {
+            background: #e9ecef;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        
+        .supported-formats {
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 10px;
+        }
+        
+        .download-btn {
+            background: #28a745;
+            color: white;
+            padding: 8px 20px;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin: 10px 5px;
+            transition: background 0.2s ease;
+        }
+        
+        .download-btn:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎭 Dance Pose Detection</h1>
+        
+        <div class="upload-area" id="uploadArea">
+            <div>
+                <h3>📹 Upload Your Dance Video</h3>
+                <p>Drag and drop your video here or click to select</p>
+                <button class="upload-btn" onclick="document.getElementById('videoFile').click()">
+                    Choose Video File
+                </button>
+                <input type="file" id="videoFile" accept="video/*" onchange="handleFileSelect(event)">
+            </div>
+        </div>
+        
+        <div class="supported-formats">
+            Supported formats: MP4, AVI, MOV, MKV, WMV, FLV, WebM (Max: 100MB)
+        </div>
+        
+        <div class="progress" id="progressContainer">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+        
+        <button class="upload-btn" id="uploadBtn" onclick="uploadVideo()" disabled>
+            🚀 Analyze Dance Poses
+        </button>
+        
+        <div class="result" id="result"></div>
+    </div>
+
+    <script>
+        let selectedFile = null;
+        
+        // Drag and drop functionality
+        const uploadArea = document.getElementById('uploadArea');
+        
+        uploadArea.addEventListener('dragover', (e) => {
+            e.preventDefault();
+            uploadArea.classList.add('dragover');
+        });
+        
+        uploadArea.addEventListener('dragleave', () => {
+            uploadArea.classList.remove('dragover');
+        });
+        
+        uploadArea.addEventListener('drop', (e) => {
+            e.preventDefault();
+            uploadArea.classList.remove('dragover');
+            
+            const files = e.dataTransfer.files;
+            if (files.length > 0) {
+                handleFile(files[0]);
+            }
+        });
+        
+        function handleFileSelect(event) {
+            const file = event.target.files[0];
+            if (file) {
+                handleFile(file);
+            }
+        }
+        
+        function handleFile(file) {
+            selectedFile = file;
+            
+            // Update UI
+            document.getElementById('uploadArea').innerHTML = `
+                <div>
+                    <h3>✅ File Selected</h3>
+                    <p><strong>${file.name}</strong></p>
+                    <p>Size: ${(file.size / (1024*1024)).toFixed(2)} MB</p>
+                    <button class="upload-btn" onclick="document.getElementById('videoFile').click()">
+                        Choose Different File
+                    </button>
+                </div>
+            `;
+            
+            document.getElementById('uploadBtn').disabled = false;
+        }
+        
+        async function uploadVideo() {
+            if (!selectedFile) {
+                alert('Please select a video file first');
+                return;
+            }
+            
+            const formData = new FormData();
+            formData.append('video', selectedFile);
+            
+            // Show progress
+            document.getElementById('progressContainer').style.display = 'block';
+            document.getElementById('uploadBtn').disabled = true;
+            document.getElementById('uploadBtn').textContent = '🔄 Processing...';
+            
+            try {
+                const response = await fetch('/upload', {
+                    method: 'POST',
+                    body: formData
+                });
+                
+                const result = await response.json();
+                
+                if (response.ok) {
+                    displaySuccess(result);
+                } else {
+                    displayError(result);
+                }
+            } catch (error) {
+                displayError({ error: 'Network Error', message: error.message });
+            } finally {
+                document.getElementById('progressContainer').style.display = 'none';
+                document.getElementById('uploadBtn').disabled = false;
+                document.getElementById('uploadBtn').textContent = '🚀 Analyze Dance Poses';
+            }
+        }
+        
+        function displaySuccess(data) {
+            const resultDiv = document.getElementById('result');
+            const result = data.result;
+            
+            let poseSummaryHtml = '';
+            if (result.pose_summary && Object.keys(result.pose_summary).length > 0) {
+                poseSummaryHtml = '<div class="pose-summary">';
+                for (const [pose, stats] of Object.entries(result.pose_summary)) {
+                    poseSummaryHtml += `
+                        <div class="pose-card">
+                            <div class="pose-name">${pose.replace('_', ' ').toUpperCase()}</div>
+                            <div class="pose-stats">
+                                ${stats.count} times (${stats.percentage}%)
+                            </div>
+                        </div>
+                    `;
+                }
+                poseSummaryHtml += '</div>';
+            }
+            
+            resultDiv.innerHTML = `
+                <h3>✅ Analysis Complete!</h3>
+                
+                <div class="video-info">
+                    <h4>📊 Video Information</h4>
+                    <p><strong>Duration:</strong> ${result.video_info.duration_seconds} seconds</p>
+                    <p><strong>Total Frames:</strong> ${result.video_info.total_frames}</p>
+                    <p><strong>Frames with Poses:</strong> ${result.video_info.frames_with_poses}</p>
+                </div>
+                
+                <h4>🎭 Detected Poses</h4>
+                ${poseSummaryHtml || '<p>No poses detected in this video.</p>'}
+                
+                <div style="text-align: center; margin-top: 20px;">
+                    <a href="/result/${data.job_id}?download=true" class="download-btn">
+                        📥 Download Full Results (JSON)
+                    </a>
+                    <button class="download-btn" onclick="showTimeline('${data.job_id}')">
+                        📈 View Timeline
+                    </button>
+                </div>
+            `;
+            
+            resultDiv.className = 'result success';
+            resultDiv.style.display = 'block';
+        }
+        
+        function displayError(data) {
+            const resultDiv = document.getElementById('result');
+            resultDiv.innerHTML = `
+                <h3>❌ Error</h3>
+                <p><strong>${data.error}</strong></p>
+                <p>${data.message}</p>
+            `;
+            resultDiv.className = 'result error';
+            resultDiv.style.display = 'block';
+        }
+        
+        async function showTimeline(jobId) {
+            try {
+                const response = await fetch(`/result/${jobId}`);
+                const data = await response.json();
+                
+                if (response.ok && data.result.timeline) {
+                    const timeline = data.result.timeline;
+                    let timelineHtml = '<h4>📈 Pose Timeline</h4><div style="max-height: 300px; overflow-y: auto;">';
+                    
+                    timeline.forEach(entry => {
+                        timelineHtml += `
+                            <div style="padding: 8px; border-bottom: 1px solid #eee;">
+                                <strong>${entry.timestamp}s:</strong> ${entry.poses.join(', ')}
+                            </div>
+                        `;
+                    });
+                    
+                    timelineHtml += '</div>';
+                    
+                    const resultDiv = document.getElementById('result');
+                    resultDiv.innerHTML += timelineHtml;
+                }
+            } catch (error) {
+                console.error('Error fetching timeline:', error);
+            }
+        }
+    </script>
+</body>
+</html>

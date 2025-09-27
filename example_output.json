@@ -1,0 +1,59 @@
+{
+  "video_info": {
+    "duration_seconds": 15.5,
+    "total_frames": 465,
+    "frames_with_poses": 420
+  },
+  "pose_summary": {
+    "standing": {
+      "count": 180,
+      "percentage": 42.86
+    },
+    "arms_up": {
+      "count": 95,
+      "percentage": 22.62
+    },
+    "squat": {
+      "count": 75,
+      "percentage": 17.86
+    },
+    "arms_crossed": {
+      "count": 45,
+      "percentage": 10.71
+    },
+    "one_arm_up": {
+      "count": 25,
+      "percentage": 5.95
+    }
+  },
+  "timeline": [
+    {
+      "timestamp": 0.03,
+      "poses": ["standing"]
+    },
+    {
+      "timestamp": 0.07,
+      "poses": ["standing", "arms_up"]
+    },
+    {
+      "timestamp": 0.10,
+      "poses": ["arms_up"]
+    },
+    {
+      "timestamp": 2.15,
+      "poses": ["squat"]
+    },
+    {
+      "timestamp": 5.42,
+      "poses": ["arms_crossed"]
+    },
+    {
+      "timestamp": 8.73,
+      "poses": ["one_arm_up"]
+    },
+    {
+      "timestamp": 12.18,
+      "poses": ["standing"]
+    }
+  ]
+}

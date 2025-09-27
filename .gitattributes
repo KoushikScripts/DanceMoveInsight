@@ -1,0 +1,2 @@
+dance/lib/python3.12/site-packages/cv2/cv2.abi3.so filter=lfs diff=lfs merge=lfs -text
+dance/lib/python3.12/site-packages/jaxlib/libjax_common.so filter=lfs diff=lfs merge=lfs -text
