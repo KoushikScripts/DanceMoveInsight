@@ -7,19 +7,29 @@ Allows video upload and returns pose analysis results
 import os
 import uuid
 import json
+import logging
+from datetime import datetime, timedelta
 from flask import Flask, request, jsonify, send_file, render_template
 from werkzeug.utils import secure_filename
 from werkzeug.exceptions import RequestEntityTooLarge
 import tempfile
 import shutil
 from dance_pose_detector import DancePoseDetector
+from config import config
 
+# Initialize Flask app
 app = Flask(__name__)
 
-# Configuration
-app.config['MAX_CONTENT_LENGTH'] = 100 * 1024 * 1024  # 100MB max file size
-app.config['UPLOAD_FOLDER'] = 'uploads'
-app.config['RESULTS_FOLDER'] = 'results'
+# Load configuration
+config_name = os.environ.get('FLASK_ENV', 'development')
+app.config.from_object(config[config_name])
+
+# Setup logging for production
+if not app.debug:
+    logging.basicConfig(level=logging.INFO)
+    app.logger.setLevel(logging.INFO)
+
+# Use configuration from config.py (already loaded above)
 
 # Allowed video extensions
 ALLOWED_EXTENSIONS = {'mp4', 'avi', 'mov', 'mkv', 'wmv', 'flv', 'webm'}
@@ -242,15 +252,47 @@ def internal_error(e):
         "message": "An unexpected error occurred"
     }), 500
 
+def cleanup_old_files():
+    """Clean up old result files"""
+    try:
+        cutoff_date = datetime.now() - timedelta(days=app.config['RESULT_RETENTION_DAYS'])
+        results_folder = app.config['RESULTS_FOLDER']
+        
+        if os.path.exists(results_folder):
+            for filename in os.listdir(results_folder):
+                file_path = os.path.join(results_folder, filename)
+                if os.path.isfile(file_path):
+                    file_time = datetime.fromtimestamp(os.path.getctime(file_path))
+                    if file_time < cutoff_date:
+                        os.remove(file_path)
+                        app.logger.info(f"Cleaned up old file: {filename}")
+    except Exception as e:
+        app.logger.error(f"Error during cleanup: {e}")
+
+# Add security headers for production
+@app.after_request
+def add_security_headers(response):
+    """Add security headers to all responses"""
+    if not app.debug and hasattr(app.config, 'SECURITY_HEADERS'):
+        for header, value in app.config['SECURITY_HEADERS'].items():
+            response.headers[header] = value
+    return response
+
 if __name__ == '__main__':
     print("🎭 Dance Pose Detection API")
     print("=" * 50)
     print("Starting Flask server...")
+    print(f"Environment: {config_name}")
     print(f"Upload folder: {app.config['UPLOAD_FOLDER']}")
     print(f"Results folder: {app.config['RESULTS_FOLDER']}")
     print(f"Max file size: {app.config['MAX_CONTENT_LENGTH'] // (1024*1024)}MB")
     print(f"Supported formats: {', '.join(ALLOWED_EXTENSIONS)}")
     print("=" * 50)
     
-    # Run in debug mode for development
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    # Get host and port from environment or use defaults
+    host = os.environ.get('HOST', '0.0.0.0')
+    port = int(os.environ.get('PORT', 5000))
+    debug = os.environ.get('FLASK_ENV') == 'development'
+    
+    # Run the application
+    app.run(host=host, port=port, debug=debug)
