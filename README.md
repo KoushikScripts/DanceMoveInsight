@@ -13,6 +13,13 @@ A Flask-based REST API for analyzing dance poses in videos using MediaPipe and O
 
 ## 🚀 Quick Start
 
+### 🌐 Live Demo (Try it now!)
+
+**🎭 Test the API live at: [http://51.21.190.200:80](http://51.21.190.200:80)**
+
+- Upload a dance video and see the pose analysis in action
+- No setup required - just visit the URL and start testing!
+
 ### Using Docker (Recommended)
 
 ```bash
@@ -79,11 +86,11 @@ DanceMoveInsight/
 
 ## 🔌 API Endpoints
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/upload` | Upload video for pose analysis |
-| `GET`  | `/health` | API health check |
-| `GET`  | `/` | Web upload interface |
+| Method | Endpoint | Description | Live Demo |
+|--------|----------|-------------|-----------|
+| `POST` | `/upload` | Upload video for pose analysis | [Try it](http://51.21.190.200:80) |
+| `GET`  | `/health` | API health check | [Check Status](http://51.21.190.200:80/health) |
+| `GET`  | `/` | Web upload interface | [Web UI](http://51.21.190.200:80) |
 
 ## 🕺 Detected Poses
 
@@ -114,6 +121,16 @@ python flask_api.py
 python examples/example_usage.py
 ```
 
+### 🧪 Test the Live API
+
+```bash
+# Test health endpoint
+curl http://51.21.190.200:80/health
+
+# Upload a video for analysis
+curl -X POST -F "video=@your_dance_video.mp4" http://51.21.190.200:80/upload
+```
+
 ## 📖 Documentation
 
 - **API Guide**: [`docs/API_README.md`](docs/API_README.md)
@@ -129,6 +146,23 @@ python examples/example_usage.py
 
 ---
 
+## 🎬 Try It Now!
+
+**🌟 Live Demo**: [http://51.21.190.200:80](http://51.21.190.200:80)
+
 **Ready to analyze some dance moves? 🕺💃**
 
-Start with: `docker run -p 5000:5000 dancemoves:latest`
+1. **Quick Test**: Visit the live demo above
+2. **Local Setup**: `docker run -p 5000:5000 dancemoves:latest`
+3. **Development**: Clone this repo and start coding!
+
+### 📱 How to Use the Live Demo:
+1. Visit [http://51.21.190.200:80](http://51.21.190.200:80)
+2. Upload a dance video (MP4, AVI, MOV, etc.)
+3. Wait for the analysis to complete
+4. View the detailed pose detection results!
+
+**Example videos to try:**
+- Short dance clips (10-30 seconds work best)
+- Clear view of the dancer
+- Good lighting conditions
